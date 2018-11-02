@@ -5,7 +5,9 @@ body {
 }
  
 
- 
+#title{
+    color:   rgb(246, 168, 0);
+}
 
 div #logo {
     width: 150px;

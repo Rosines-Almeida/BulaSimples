@@ -25,18 +25,21 @@
 /* navbar */
 .img-logo{
   width: 13vh;
- 
-  margin: 0%;
-  padding: 0%;
+  margin-left: 20px;
 }
 nav a {
   color: white;
   font-size:20px;
-  
-  
-  
-}
- 
+ }
+ .title-nav{
+   margin: 0px;
+   padding: 0px;
+   color: white;
+   font: bold;
+   font-family: 'Ramaraja', serif;
+   font-size: 1.5em;
+    
+ }
 .section-main{
   background-color: #1e7e3412;
 }
@@ -92,4 +95,18 @@ input[type=text] {
   background-color: transparent;
   background-image: none;
   border-color: #d4741db8;
+}
+
+/* footer */
+.img-logo-footer{
+  width: 5vh;
+  margin-left: 5px;
+
+}
+.color-green{
+  background-color: #5D6E80;
+}
+.title-footer{
+  font-size: 0.9em;
+  color: white;
 }
