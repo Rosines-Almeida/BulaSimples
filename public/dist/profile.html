@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+      <script src="firebase-init.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|family=Ramaraja" rel="stylesheet">
+      <link href="profile.css" rel="stylesheet" type="text/css" />
+      <title>Bula Simples</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-1g color-one  container-fluid  ">
+         <div></div>
+         <div>
+            <img  class='img-logo' src="./img/logoT.png">  
+            <span class ='title-nav'> <strong>Bula Simples </strong>  </span>
+         </div>
+         <a class='mr-5' style="text-decoration:none" href= '../index.html'><i class="fas fa-times-circle p-2"></i>Sair</a>
+      </nav>
+      <div class= 'ml-5 mt-5'> 
+         <label>Cadastre seus medicamentos</label>
+      </div>
+      <div class='ml-5'>
+         <form class="form-inline">
+            <input id ='input-task' class="task-input form-control mr-sm-2" type="search" placeholder="Princípio ativo" aria-label="Search">
+            <button class="send-task btn btn-outline-success my-2 my-sm-0" type="submit"> <i class="fas fa-plus-circle"></i> </button>
+         </form>
+      </div>
+      <div class='section-main'>
+         <div class="row m-4 task-list">
+         </div>
+      </div>
+      <div class='text-section-two d-flex justify-content-center'>
+         <p class ='mt-5'>Escolha dois medicamentos da lista ou digite abaixo para verificar interação </p>
+      </div>
+      <div id = "input-section-two" >
+         <div class="d-flex justify-content-center">
+            <input class='mt-5'type="text" value='' id="med1" placeholder ='Medicamento 1'>
+            <input class='mt-5 ml-5'type="text" value='' id="med2" placeholder ='Medicamento 2'>  
+         </div>
+      </div>
+      <div id = "texto" class = 'input-section-two d-flex justify-content-center'></div>
+      <div class='d-flex justify-content-center' >
+         <button type="button" class="btn-inter mt-3 btn btn-outline-success" id='btn-filter' data-toggle='modal' data-target='#modalInter'>Consultar</button>
+      </div>
+      </div> 
+      <div class="modal" tabindex="-1" role="dialog" id="modalInter">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header color-one">
+                  <h5 class="modal-title">Interação</h5>
+                  <img src="./img/logoT.png" width="40px">
+               </div>
+               <div class="modal-body">
+                  <p id='descricao'> </p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button color-two" class="btn color-two" data-dismiss="modal"> <i class="fas fa-times"></i></button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal" tabindex="-1" role="dialog" id="modalInfo">
+         <div class="  modal-dialog" role="document">
+            <div class="modal-content">
+               <div id='textsInfo'>
+                  <div class="  modal-header color-one">
+                     <h5 class="modal-title" id='title-info'> </h5>
+                     <img src="./img/logoT.png" width="40px">
+                  </div>
+                  <div class="modal-body">
+                     <p> <strong>Classe</strong> </p>
+                     <p id='classe-info'> </p>
+                     <hr>
+                  </div>
+                  <div class="modal-body">
+                     <p> <strong>Posologia</strong> </p>
+                     <p id='posologia-info'> </p>
+                     <hr>
+                  </div>
+                  <div class="modal-body">
+                     <p> <strong>Interação alimentar</strong> </p>
+                     <p id='alimentar-info'> </p>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button color-two" class="btn color-two" data-dismiss="modal"> <i class="fas fa-times"></i></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <nav class="navbar navbar-expand-1g color-green mt-5 container-fluid">
+         <div>
+            <img  class='img-logo-footer' src="./img/logoT.png">  
+            <span class ='title-footer'> <strong>Bula Simples </strong></span>
+         </div>
+      </nav>
+      <script
+         src="https://code.jquery.com/jquery-3.3.1.min.js"
+         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+      <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <script src="data.js"></script>
+      <script src="index.js"></script>
+      <script src="profile.js"></script>
+   </body>
+</html>

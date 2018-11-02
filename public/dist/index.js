@@ -57,7 +57,7 @@ function createUserInDB(id, name, email) {
 }
 
 function signInRedirect(userId) {
-  window.location = "./dist/app.html?userId=" + userId;
+  window.location = "./dist/profile.html?userId=" + userId;
 }
 
  

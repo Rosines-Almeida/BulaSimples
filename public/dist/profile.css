@@ -1,0 +1,102 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.color-one {
+  background-color: #00ada7;
+}
+
+.color-two {
+  background-color: #d4741db8;
+}
+
+
+/* navbar */
+
+.img-logo {
+  width: 13vh;
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+}
+
+.title-nav {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font: bold;
+  font-family: 'Ramaraja', serif;
+  font-size: 1.5em;
+}
+
+.section-main {
+  background-color: #1e7e3412;
+}
+
+.font-list {
+  color: black;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-font {
+  font-size: 15px;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid #d4741db8;
+}
+
+.task-input {
+  width: 40% !important;
+}
+
+.btn-outline-success {
+  color: #d4741db8;
+  background-color: transparent;
+  background-image: none;
+  border-color: #d4741db8;
+}
+
+
+/* footer */
+
+.img-logo-footer {
+  width: 5vh;
+  margin-left: 5px;
+}
+
+.color-green {
+  background-color: #5D6E80;
+}
+
+.title-footer {
+  font-size: 0.9em;
+  color: white;
+}
+
+
+/* icons */
+
+.fa-pills {
+  color: #d4741db8;
+  font-size: 20px;
+}
+
+.fa-info-circle {
+  color: #00ada7;
+}
+
+.fa-times-circle {
+  color: white;
+}
+
+.fa-trash-alt {
+  color: #00ada7;
+}

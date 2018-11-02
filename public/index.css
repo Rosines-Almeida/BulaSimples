@@ -7,19 +7,19 @@ body {
 
 #title{
     color:   rgb(246, 168, 0);
+    font-family: 'Ramaraja', serif;
 }
 
 div #logo {
     width: 150px;
 }
 
-.form {
+.form{
     margin-top: 50px;
 }
 
 .form-group {
- 
-    position: relative;
+  position: relative;
 }
 
 .form-group i {
