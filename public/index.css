@@ -1,0 +1,48 @@
+body {
+   background-color: #21252912;
+    margin-top: 5%;
+    font-family: 'Roboto', sans-serif !important;
+}
+ 
+
+ 
+
+div #logo {
+    width: 150px;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.form-group {
+ 
+    position: relative;
+}
+
+.form-group i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    padding: 10px 25px;
+    color: rgb(48, 48, 49);
+}
+
+#inputEmail,
+#inputPassword {
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+#btnLogin {
+    background-color: rgb(246, 168, 0);
+    border-color: rgb(246, 168, 0);
+    width: 100%;
+    color: rgb(67, 67, 68);
+    margin-top: 5px;
+}
+ 
+span {
+    color: rgb(246, 168, 0);
+    font-weight: bold;
+}

@@ -9,38 +9,43 @@
  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"> <i class="fas fa-tablets"></i> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"> </span></a>
-          </li>
-      
-        </ul>
-      </div>
-    </nav> 
-    <!-- fim navbar -->
 
-    <!-- section cadastro  -->
-    <div class='d-flex justify-content-center'> 
-      <label>Cadastre seus medicamento </label>
+     <nav class="navbar navbar-expand-1g color-one  container-fluid  ">
+    
+        <div> </div> 
+        <img  class='img-logo' src="oie_transparent8.png"> 
+<div class='  '> 
+        <a class='mr-5 ' style="text-decoration:none" href= '../index.html'  ><i class="fas fa-times-circle p-2"></i>Sair</a>
+     
+   
+      </div>
+
+    </nav>  
+  
+    <!-- <nav class="navbar navbar-expand-lg  fixed-top color-one">
+      <img src = ' ' class="img-logo">
+      <a href=# > Sair</a>
+      
+    </nav>   -->
+     
+     <!-- section cadastr  -->
+    <div class= 'ml-5 mt-5'> 
+      <label>Cadastre seus medicamentos </label>
     </div>
-    <div class ='d-flex justify-content-center'>
+    <div class =' ml-5'>
       <form class="form-inline">
-        <input class=" task-input form-control mr-sm-2" type="search" placeholder="Princípio ativo" aria-label="Search">
+        <input id ='input-task' class="task-input form-control mr-sm-2" type="search" placeholder="Princípio ativo" aria-label="Search">
         <button class=" send-task btn btn-outline-success my-2 my-sm-0" type="submit"> <i class="fas fa-plus-circle"></i> </button>
       </form>
     </div>
     <!-- fim do form de cadastro -->
 
     <!-- section  cards / medicamentos cadastrados -->
-    <div>
+    <div class='section-main'>
       <div class="row m-4 task-list">
       </div>
     </div>
@@ -62,16 +67,79 @@
     <!-- fim da section display nome -->
     <div id = "texto" class = 'input-section-two d-flex justify-content-center'></div>
     <div class='d-flex justify-content-center' >
-      <button type="button" class="btn-inter mt-3 btn btn-outline-success" id='btn-filter'>Ver interação</button>
+      <button type="button" class="btn-inter mt-3 btn btn-outline-success" id='btn-filter' data-toggle='modal' data-target='#modalInter'>Consultar</button>
     </div>
     </div> 
-    <!-- section descrição -->
-    <div id='descricao'> </div>
+
+    <!-- modal -->
+
+    <!-- <div class="modal fade" id="modalInter"> -->
+       <div class="modal" tabindex="-1" role="dialog" id="modalInter">
+        <div class="  modal-dialog" role="document">
+          <div class="  modal-content">
+            <div class="  modal-header color-one">
+                <h5 class="modal-title  " >Interação</h5>
+              <img src="oie_transparent8.png" width="40px">
+              
+             
+             
+            
+            </div>
+            <div class="modal-body">
+              <p id='descricao'> </p>
+            </div>
+            <div class="modal-footer">
+              
+              <button type="button color-two" class="btn color-two" data-dismiss="modal"> <i class="fas fa-times"></i></button>
+            </div>
+          </div>
+        </div>   
+        </div>
+     <!-- modal mais-informação -->
+     <div class="modal" tabindex="-1" role="dialog" id="modalInfo">
+      <div class="  modal-dialog" role="document">
+        <div class="modal-content">
+            <div id='textsInfo'>
+          <div class="  modal-header color-one">
+           
+              <h5 class="modal-title" id='title-info'> </h5>
+            <img src="oie_transparent8.png" width="40px">
+           </div>
+          <div class="modal-body">
+              <p> <strong>Classe</strong> </p>
+            <p id='classe-info'> </p>
+            <hr>
+          </div>
+          <div class="modal-body">
+              <p> <strong>Posologia</strong> </p>
+            <p id='posologia-info'> </p>
+            <hr>
+          </div>
+          <div class="modal-body">
+              <p> <strong>Interação alimentar</strong> </p>
+            <p id='alimentar-info'> </p>
+       
+          </div>
+         
+          <div class="modal-footer">
+            
+            <button type="button color-two" class="btn color-two" data-dismiss="modal"> <i class="fas fa-times"></i></button>
+            </div>  
+          </div>
+           </div>
+        </div>
+      </div>   
+      </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script src="data.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+      <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   
+      <script src="data.js"></script>
     <script src="index.js"></script>
     <script src="app.js"></script>
   </body>
