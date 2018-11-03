@@ -19,7 +19,6 @@ Json criado com uma lista de medicametos
 <h2> roadmap oficial do projeto </h2> 
 <h3> versão 1.0.1  </h3>
 <p> Aumentar a lista de medicamentos</p>
-<p> Inserir informação adicional de cada medicamento </p>
 
 <h3> versão 2.0.0   </h3>
 <p> Consultar interação por classe de medicamento </p>
