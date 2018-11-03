@@ -3,8 +3,8 @@
 <h2> versão 1.0.0 </h2>
 
 <p> Login pelo firebase </p>
-<p> Cadastrar medicamentos. </p>
-<p> Consultar a interação entre dois medicamentos cadastrados no seu login ou digitar o nome de dois medicamentos. </p>
+<p> Cadastro de medicamentos. </p>
+<p> Consulta a interação entre dois medicamentos cadastrados no login do usuário. Ou a consulta pode ser realizada digitando os nomes dos medicamentos. </p>
 
 Json criado com uma lista de medicametos
 
