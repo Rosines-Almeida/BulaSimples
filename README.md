@@ -1,5 +1,5 @@
 # Bula Simples
-<p> Aplicação para consultar interação entre medicamentos e informações de posologia de forma simples e rapida para o usuário. </p>
+<p> Aplicação para consultar interação entre medicamentos e verificar informações de posologia de forma simples e rápida para o usuário. Possível cadastrar os medicamentos de uso para consultar a interação entre eles. </p>
 <h2> versão 1.0.0 </h2>
 
 <p> Login pelo firebase </p>
