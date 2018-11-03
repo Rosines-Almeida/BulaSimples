@@ -2,9 +2,9 @@
 <p> Aplicação para consultar interação entre medicamentos e verificar informações de posologia de forma simples e rápida para o usuário. Possível cadastrar os medicamentos de uso para consultar a interação entre eles. </p>
 <h2> versão 1.0.0 </h2>
 
-<p> Login pelo firebase </p>
-<p> Cadastro de medicamentos. </p>
-<p> Consulta a interação entre dois medicamentos cadastrados no login do usuário. Ou a consulta pode ser realizada digitando os nomes dos medicamentos. </p>
+ * Login pelo firebase  
+ * Cadastro de medicamentos. 
+ * Consulta a interação entre dois medicamentos cadastrados no login do usuário. Ou a consulta pode ser realizada digitando os nomes dos medicamentos. 
 
 Json criado com uma lista de medicametos
 
